@@ -61,6 +61,15 @@ namespace ConwayGameOfLife.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream buttonSound {
+            get {
+                return ResourceManager.GetStream("buttonSound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] C_C_Red_Alert__INET_ {

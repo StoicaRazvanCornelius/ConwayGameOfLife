@@ -52,6 +52,7 @@ namespace ConwayGameOfLife
             this.BackColor=Color.Black;
             this.Name = "mainForm";
             this.Text = "Conway's game of life";
+            this.Click += new System.EventHandler(ClickSound);
             // 
             // Game Title
             // 
@@ -64,7 +65,9 @@ namespace ConwayGameOfLife
             this.gameTitle.UseCompatibleTextRendering = true;
             this.gameTitle.BackColor = Color.Black;
             this.gameTitle.ForeColor = Color.Lime;
-           
+            this.gameTitle.Click += new EventHandler(ClickSound);
+
+
             this.Controls.Add(this.gameTitle);
             // 
             // Start button
