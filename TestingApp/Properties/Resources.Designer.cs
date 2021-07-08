@@ -59,5 +59,15 @@ namespace ConwayGameOfLife.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] C_C_Red_Alert__INET_ {
+            get {
+                object obj = ResourceManager.GetObject("C_C_Red_Alert__INET_", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
     }
 }
