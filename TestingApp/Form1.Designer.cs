@@ -4,16 +4,18 @@ using System.Drawing;
 using System.Drawing.Text;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
+using ContentAlignment = System.Drawing.ContentAlignment;
 
 namespace ConwayGameOfLife
 {
-    partial class mainForm
+    partial class mainForm:IView
     {
         /// <summary>
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
-
+        private Controller controller = null;
         /// <summary>
         /// Clean up any resources being used.
         /// </summary>
@@ -53,6 +55,11 @@ namespace ConwayGameOfLife
             this.Name = "mainForm";
             this.Text = "Conway's game of life";
             this.Click += new System.EventHandler(ClickSound);
+            // 
+            // Controller 
+            // 
+                this.controller=Controller.GetDefaultController();
+                this.controller.SetView(this);
             // 
             // Game Title
             // 
@@ -123,6 +130,11 @@ namespace ConwayGameOfLife
             return pfc;
         }
 
+
+        public void UpdateView()
+        {
+            this.BackColor=Color.Red;
+        }
     }
 }
 

@@ -34,6 +34,7 @@ namespace ConwayGameOfLife
             Console.WriteLine("Start btn clicked");
             this.exitBtn.Visible = false;
             this.startBtn.Visible = false;
+            this.controller.ClickOnGrid();
             PlaySoundClick();
         }
 
