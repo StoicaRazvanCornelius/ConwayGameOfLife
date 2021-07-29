@@ -122,6 +122,6 @@
     <value>..\Resources\buttonSound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="C_C_Red_Alert__INET_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Fonts\C&amp;C Red Alert [INET].ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>..\Resources\C&amp;C Red Alert [INET].ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>
